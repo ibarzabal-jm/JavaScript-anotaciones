@@ -64,9 +64,6 @@
 
 
 
-
-
-
 /*
     Editando estilos
     ==============
@@ -80,9 +77,6 @@
     const nuestroTwitter = document.querySelector('.twitter');
     nuestroTwitter.style.backgroundColor = 'white';
 */
-
-// Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
-
 
 
 
@@ -102,11 +96,4 @@
     nuevoParrafo.appendChild(textoParrafo);
     nodoPagina.appendChild(nuevoParrafo);
 */
-
-// Tarea: Todavía seguís teniendo a los gatitos en tu pantalla? A mí me gusta el logo y los gatitos.
-//       Creá una nueva imagen con nuestro logo como fuente, y ponela
-//       en nuestra cabecera.
-//
-// P.S. También les podés dar estilos al nuevo nodo que creaste.
-
 
