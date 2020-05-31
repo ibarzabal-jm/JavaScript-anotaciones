@@ -19,3 +19,10 @@ let cambiarEstilo = document.querySelector('#estilo');
 
 cambiarEstilo.style.backgroundColor = 'red';
 cambiarEstilo.style.borderRadius = '20px';
+
+cambiarEstilo.onclick = function(){
+
+    cambiarEstilo.style.backgroundColor = 'blue';
+}
+
+
