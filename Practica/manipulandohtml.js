@@ -15,3 +15,7 @@ for( let i = 0 ; i < contenedorLista.length; i++){
 
 }
 
+let cambiarEstilo = document.querySelector('#estilo');
+
+cambiarEstilo.style.backgroundColor = 'red';
+cambiarEstilo.style.borderRadius = '20px';
