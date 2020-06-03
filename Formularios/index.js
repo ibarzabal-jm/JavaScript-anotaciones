@@ -16,7 +16,8 @@ function crearIntegrantes(cantidad){
 
     const $button = document.createElement('button');
     $button.type = 'submit';
-    $button.textContent='Siguiente';
+    $button.textContent='Calcular';
+    $button.id = 'calcular';
 
     const $integrantes = document.querySelector('#integrantes');
     $integrantes.appendChild($button);
@@ -38,6 +39,17 @@ function crearIntegrante(indice){
     const $integrantes = document.querySelector('#integrantes');
     $integrantes.appendChild($div);
 
+
+}
+
+
+document.querySelector('#calcular').onclick = function(event){
+
+    console.log('Hola');
+    const numeros = obtenerEdadesIntegrantes();
+    mostrarEdad('mayor', obtenerMayorNumero);
+    mostrarEdad('menor', obtenerMenorNumero);
+    mostrarEdad('promedio', obtenerPromedio);
 
 }
 
