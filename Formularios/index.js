@@ -36,6 +36,8 @@ function crearIntegrante(indice){
 }
 
 
+
+
 function crearBotonCalcular(){
     const $button = document.createElement('button');
     $button.type = 'submit';
@@ -51,9 +53,18 @@ function crearBotonCalcular(){
 
 
 function calcular(){
-    console.log('Hola');
+    const numeros = obtenerEdades();
+    mostrarEdad('mayor', obtnerMayorNumero(numeros));
+    mostrarEdad('menor', obtenerMenorNumero(numeros));
+    mostrarEdad('promedio', obtenerPromedio(numeros));
+
+    event.preventDefault();
 }
 
+
+function obtenerEdades(){
+    const $integrantes = document.querySelector
+}
 
 function borrarIntegrantesAnteriores(){
     const $integrantes = document.querySelectorAll('.integrante');
@@ -62,3 +73,40 @@ function borrarIntegrantesAnteriores(){
     }
 }
 
+
+
+
+// funciones de obtener numero mayor, menor y promedio
+
+function obtenerMenorNumero(numeros){
+    let menorNumero = numeros[0];
+    for (let i = 1; i<numeros.length ; i++){
+        if( numeros[i] < menorNumero){
+            menorNumero = numeros[i];
+        }
+    }
+
+    return menorNumero;
+}
+
+function obtenerMayorNumero(numeros){
+    let mayorNumero = numeros[0];
+    for (let i = 1; i< numeros.length ; i++){
+        if( numeros[i] > mayorNumero){
+            mayorNumero = numeros[i];
+        }
+    }
+
+    return mayorNumero;
+}
+
+
+function obtenerPromedio(numeros){
+    let suma = 0;
+
+    for (let i = 1; i < numeros.length; i++){
+        suma += numeros[i];
+    }
+    
+    return (suma /numeros.length);
+}
