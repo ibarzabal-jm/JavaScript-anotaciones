@@ -4,6 +4,8 @@ document.querySelector('#siguiente').onclick = function (event){
 
     borrarIntegrantesAnteriores();
     crearIntegrantes(cantidadIntegrantes);
+
+
     event.preventDefault();
 }
 
@@ -11,6 +13,9 @@ function crearIntegrantes(cantidad){
     for (let i = 0 ; i < cantidad ; i++){
         crearIntegrante(i);
     }
+    const $button = document.createElement('button');
+    $button.type = 'submit';
+    
 }
 
 function crearIntegrante(indice){
@@ -37,3 +42,4 @@ function borrarIntegrantesAnteriores(){
         $integrantes[i].remove();
     }
 }
+
