@@ -97,7 +97,7 @@ function mostrarEdad(tipo, valor){
 
 function obtenerMenorNumero(numeros){
     let menorNumero = numeros[0];
-    for (let i = 1; i<numeros.length ; i++){
+    for (let i = 0; i<numeros.length ; i++){
         if( numeros[i] < menorNumero){
             menorNumero = numeros[i];
         }
@@ -110,7 +110,7 @@ function obtenerMayorNumero(numeros){
     
     let mayorNumero = numeros[0];
 
-    for (let i = 1; i< numeros.length ; i++){
+    for (let i = 0; i< numeros.length ; i++){
         if( numeros[i] > mayorNumero){
             mayorNumero = numeros[i];
         }
@@ -123,9 +123,11 @@ function obtenerMayorNumero(numeros){
 function obtenerPromedio(numeros){
     let suma = 0;
 
-    for (let i = 1; i < numeros.length; i++){
+    for (let i = 0; i < numeros.length; i++){
         suma += numeros[i];
     }
+
+    
     
     return (suma /numeros.length).toFixed(2);
 }
