@@ -13,9 +13,14 @@ function crearIntegrantes(cantidad){
     for (let i = 0 ; i < cantidad ; i++){
         crearIntegrante(i);
     }
+
     const $button = document.createElement('button');
     $button.type = 'submit';
-    
+    $button.textContent='Siguiente';
+
+    const $integrantes = document.querySelector('#integrantes');
+    $integrantes.appendChild($button);
+
 }
 
 function crearIntegrante(indice){
