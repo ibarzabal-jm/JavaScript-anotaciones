@@ -4,6 +4,7 @@ document.querySelector('#siguiente').onclick = function (event){
 
     borrarIntegrantesAnteriores();
     crearIntegrantes(cantidadIntegrantes);
+    crearBotonCalcular();
 
 
     event.preventDefault();
@@ -13,14 +14,6 @@ function crearIntegrantes(cantidad){
     for (let i = 0 ; i < cantidad ; i++){
         crearIntegrante(i);
     }
-
-    const $button = document.createElement('button');
-    $button.type = 'submit';
-    $button.textContent='Calcular';
-    $button.id = 'calcular';
-
-    const $integrantes = document.querySelector('#integrantes');
-    $integrantes.appendChild($button);
 
 }
 
@@ -43,15 +36,24 @@ function crearIntegrante(indice){
 }
 
 
-document.querySelector('#calcular').onclick = function(event){
+function crearBotonCalcular(){
+    const $button = document.createElement('button');
+    $button.type = 'submit';
+    $button.textContent='Calcular';
+    $button.id = 'calcular';
 
-    console.log('Hola');
-    const numeros = obtenerEdadesIntegrantes();
-    mostrarEdad('mayor', obtenerMayorNumero);
-    mostrarEdad('menor', obtenerMenorNumero);
-    mostrarEdad('promedio', obtenerPromedio);
+    const $integrantes = document.querySelector('#integrantes');
+    $integrantes.appendChild($button);
+
+    document.querySelector('#calcular').addEventListener('click', calcular);
 
 }
+
+
+function calcular(){
+    console.log('Hola');
+}
+
 
 function borrarIntegrantesAnteriores(){
     const $integrantes = document.querySelectorAll('.integrante');
