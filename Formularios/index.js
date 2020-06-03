@@ -54,16 +54,30 @@ function crearBotonCalcular(){
 
 function calcular(){
     const numeros = obtenerEdades();
-    mostrarEdad('mayor', obtnerMayorNumero(numeros));
+    mostrarEdad('mayor', obtenerMayorNumero(numeros));
     mostrarEdad('menor', obtenerMenorNumero(numeros));
     mostrarEdad('promedio', obtenerPromedio(numeros));
 
+    document.querySelector('#resultados').className = '';
     event.preventDefault();
 }
 
 
+function resetear() {
+    borrarIntegrantesAnteriores();
+    ocultarBotonCalculo();
+    ocultarResultados();
+}
+
 function obtenerEdades(){
-    const $integrantes = document.querySelector
+    const $integrantes = document.querySelectorAll('#integrantes input')
+    const edades = [];
+    for (let i = 0; i < $integrantes.length; i++) {
+        edades.push(Number($integrantes[i].value));
+        
+    }
+
+    return edades;
 }
 
 function borrarIntegrantesAnteriores(){
@@ -75,6 +89,9 @@ function borrarIntegrantesAnteriores(){
 
 
 
+function mostrarEdad(tipo, valor){
+   document.querySelector(`#${tipo}-edad`).textContent = valor;
+}
 
 // funciones de obtener numero mayor, menor y promedio
 
@@ -90,14 +107,16 @@ function obtenerMenorNumero(numeros){
 }
 
 function obtenerMayorNumero(numeros){
+    
     let mayorNumero = numeros[0];
+
     for (let i = 1; i< numeros.length ; i++){
         if( numeros[i] > mayorNumero){
             mayorNumero = numeros[i];
         }
     }
 
-    return mayorNumero;
+    return (mayorNumero);
 }
 
 
@@ -108,5 +127,5 @@ function obtenerPromedio(numeros){
         suma += numeros[i];
     }
     
-    return (suma /numeros.length);
+    return (suma /numeros.length).toFixed(2);
 }
