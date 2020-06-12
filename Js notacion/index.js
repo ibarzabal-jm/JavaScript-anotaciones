@@ -106,12 +106,41 @@
     Forma de probar si algo está en correcto funcionamiento, por si alguien toca
     una función
 
-
+    EJEMPLOS:
+    ==================
     function sumar(a,b){
         return a - b;
     }
 
     console.assert(sumar(1,2) === 3, 'la suma de 1 + 2 no dio 3');
+
+    function validarNombre(nombre){
+        if (nombre.length === 0 ){
+            return 'Este campo debe tener al menos un caracter'
+        }
+
+        if (nombre.length >=50){
+            return 'Este campo debe tener cuanto mucho 50 caracteres'
+        }
+
+        return '';
+    }
+
+    function probarValidarNombre() {
+        console.assert(
+            validarNombre('') === 'Este campo debe tener al menos un caracter',
+            'Validar nombre no validó que el nombre no sea vacío',
+        );
+
+        console.assert(
+            validarNombre(
+                '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111') ===
+                'Este campo debe tener cuanto mucho 50 caracteres',
+            'Validar nombre no validó que el nombre sea menor a 50 caracteres',
+        );
+        }
+
+    probarValidarNombre();
 
 */
 
