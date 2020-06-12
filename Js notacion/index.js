@@ -97,3 +97,25 @@
     nodoPagina.appendChild(nuevoParrafo);
 */
 
+
+/*
+
+    Assert
+    =============================
+    console.assert(1===2, "1 no es igual a 2");
+    Forma de probar si algo está en correcto funcionamiento, por si alguien toca
+    una función
+
+
+    function sumar(a,b){
+        return a - b;
+    }
+
+    console.assert(sumar(1,2) === 3, 'la suma de 1 + 2 no dio 3');
+
+*/
+
+
+
+
+
