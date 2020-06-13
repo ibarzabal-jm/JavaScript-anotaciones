@@ -155,6 +155,9 @@
         /^abc/ => comienza con abc
         /^abc[0-9]+/ => que despues venga un numero de 0 a 9 aunque sea
                         //si quiero cero o más uso el *
+                        // si quiero una cantidad exacta {2} solo 2 numeros por ej
+                        // si quiero un rango {4,10}
+                        
 
 
 
