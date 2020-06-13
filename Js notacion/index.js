@@ -157,7 +157,9 @@
                         //si quiero cero o más uso el *
                         // si quiero una cantidad exacta {2} solo 2 numeros por ej
                         // si quiero un rango {4,10}
-                        
+        
+         /abc[0-9]{2,3}$/ => si quiero que termine con un numero de 2 a 3 digitos
+                    
 
 
 
