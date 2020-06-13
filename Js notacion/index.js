@@ -99,7 +99,6 @@
 
 
 /*
-
     Assert
     =============================
     console.assert(1===2, "1 no es igual a 2");
@@ -144,7 +143,22 @@
 
 */
 
+/*
+        Regular Expressions
+        ====================
+        
+        Se usan para encontrar texto, y buscar & reemplazar porciones de texto.
+        
+        console.log(/abc/.test("abcde")); => true
+        console.log(/abc/.test("abcde")); => false
 
+        /^abc/ => comienza con abc
+        /^abc[0-9]+/ => que despues venga un numero de 0 a 9 aunque sea
+                        //si quiero cero o más uso el *
+
+
+
+*/
 
 
 
