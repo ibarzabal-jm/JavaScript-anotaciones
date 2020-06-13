@@ -159,8 +159,12 @@
                         // si quiero un rango {4,10}
         
          /abc[0-9]{2,3}$/ => si quiero que termine con un numero de 2 a 3 digitos
-                    
+        
 
+         /[a-z]+/.i.test() =>  Para mayusculas o minusculas
+         || /[A-z]+/.test('Abc')
+
+         /[A-z]+ [A-z]+/ => para dos nombres
 
 
 */
