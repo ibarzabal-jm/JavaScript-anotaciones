@@ -166,7 +166,7 @@
 
          /[A-z]+ [A-z]+/ => para dos nombres
 
-         /[A-z0-9  n Ñ \.]+/ ==> escapar el punto
+         /[A-z0-9  n Ñ \.]+/ => escapar el punto
 
 */
 
