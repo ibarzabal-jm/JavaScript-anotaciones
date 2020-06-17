@@ -176,10 +176,10 @@
 /*
     forEach
     ===============
+    Forma de recorrer elementos (json,array, etc)
+    
     Buscar JS-Max, en tu main, lo utilizaste bien varias veces.
     Acordate de tipear forEach solo y ya te ayuda
-
-
     function mostrar(valor){
         console.log(valor);
     }
