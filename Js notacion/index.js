@@ -176,7 +176,21 @@
 /*
     forEach
     ===============
+    Buscar JS-Max, en tu main, lo utilizaste bien varias veces.
+    Acordate de tipear forEach solo y ya te ayuda
 
+
+    function mostrar(valor){
+        console.log(valor);
+    }
+
+    let array = [5, 4, 8, 3, 2];
+
+    array.forEach(mostrar);
+
+
+    //array.forEach(numero=>console.log(numero)); resimplificada
+    
 
 
     [1,2,3,4].forEach(function(numero){console.log(numero);})
