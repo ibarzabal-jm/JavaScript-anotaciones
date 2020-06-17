@@ -173,4 +173,14 @@
 */
 
 
+/*
+    forEach
+    ===============
+
+
+
+    [1,2,3,4].forEach(function(numero){console.log(numero);})
+
+*/
+
 
