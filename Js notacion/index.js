@@ -29,6 +29,17 @@
 
 
 /*
+    Array.map()
+    ============
+    
+    Ejemplo:
+    let array = [1, 5, 7 ];
+    let arraydoble = array.map(function(numero){
+        return numero * 2;
+    }) 
+*/
+
+/*
     Elementos de Acceso
     ==================
     Document Object Model (DOM)
