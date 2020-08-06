@@ -197,4 +197,24 @@
 
 */
 
+/*
+    CLonar un objeto:
+        const persona = {
+            nombre:'Tony',
+            apellido: 'Stark',
+            edad: 45,
+            direccion: {
+                ciudad: 'New York',
+                zip: 45548932,
+                lat: 14.3232,
+                lng: 45.5425
+            }
+        };
+
+        const persona2 = {...persona}
+
+        rsona2.nombre ='Peter';
+
+*/
+
 
