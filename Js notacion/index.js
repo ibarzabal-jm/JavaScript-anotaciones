@@ -198,7 +198,8 @@
 */
 
 /*
-    CLonar un objeto:
+
+    CLonar un objeto (funciona con los arrays):
         const persona = {
             nombre:'Tony',
             apellido: 'Stark',
