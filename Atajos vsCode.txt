@@ -1,0 +1,57 @@
+Comentarios:
+
+control + /
+control + shift + / 
+
+Ir a una funcion
+ctrl + click
+
+Ver una funcion
+altgr+f12
+altgr
+
+Borrar una linea
+ctrl+shift+k
+
+
+Ocultar barra lateral
+Ctrl + B
+
+Nueva Terminal
+ctrl+shift+ñ
+
+Encerrar en algo que quiero (PUSE ALT + <):
+
+Buscar: Wrap with abbreviation
+        debe de quedar el ng serve así
+        <code>ng serve</code>
+
+<p>
+    Ejecutar el comando
+    <code>ng serve</code>
+</p>
+
+
+
+PESTAÑAS:
+
+Ctrl + W            Cerrar tab
+Ctrl + K  Ctrl + W  Cerrar todas
+Ctrl + Shift + T    Reabrir anterior
+Ctrl + TAB          Cambiar de tab
+
+MultiCursor:
+Ctrl + Alt+ ↑ / ↓
+shift+alt + ->      para seleccionar cosas diferentes a continuacion
+Alt + dobleclick    para seleccionar cosas diferentes y lo de arriba no funciona
+
+Para ver el MD MarkDown Open Preview:
+Lo de Github
+
+Control + Shift + P
+
+Cambiar el nombre de una Clase en un solo documento:
+F2
+Si queres cambiar una clase exportada, lo mismo pero busca donde está definida.
+
+
